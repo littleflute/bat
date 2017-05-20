@@ -34,7 +34,7 @@ for /F "delims=" %%a in ('dir /b *.mp3') do (
 	)
 	if !x! == 30 (
 		echo ^<br^> >>index.html
-	)
+	) 
 	if !x! == 40 (
 		echo ^<br^> >>index.html
 	)
