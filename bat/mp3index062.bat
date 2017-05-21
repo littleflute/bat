@@ -1,4 +1,4 @@
-;v0.5.6
+;v0.6.2
  
 del index.html
 echo ^<!DOCTYPE html^>  >> index.html
@@ -47,13 +47,13 @@ for /F "delims=" %%a in ('dir /b *.mp3') do (
 )
  
 
-echo ^<audio id="mp3Player" controls^> 	>>index.html
+echo ^<br^>^<audio id="mp3Player" controls^> 	>>index.html
 echo 	^<source src="01 Owner of a Lonely Heart.mp3" type="audio/mpeg"^>	>>index.html
 echo	Your browser does not supoort hte audio element!	>>index.html
 echo ^</audio^>		>>index.html
 
 echo ^<div id="timerShow" style="border:1px solid blue;"^>^</div^>	>>index.html
-echo ^<button onclick="xdTest(1)"^>test^</button^>	>>index.html
+echo ^<button onclick="playId(1)"^>test^</button^>	>>index.html
 
 echo ^<script^>								>> index.html
 
@@ -89,11 +89,12 @@ echo    nTimer++;			>>index.html
 echo    var t = document.getElementById("timerShow"); 		>> index.html
 echo    var p = document.getElementById("mp3Player"); 		>> index.html
 echo	t.innerHTML = nTimer + ": " + p.currentTime + "/" + p.duration;		>> index.html
-echo	if(p.ended) xdTest(oldBtn.id+1);	>>index.html
+echo	if(p.ended) playId(parseInt(oldBtn.id)+1);	>>index.html
 echo }>>index.html
 
-echo function xdTest(id){	>>index.html
+echo function playId(id){	>>index.html
 echo    var b = document.getElementById(id);	>>index.html 
+echo    if(b==null) b = document.getElementById("1");	>>index.html
 echo    play(b);	>>index.html
 echo }>>index.html
 

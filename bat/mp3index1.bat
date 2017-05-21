@@ -1,4 +1,4 @@
-;v0.5.6
+;v0.5.7
  
 del index.html
 echo ^<!DOCTYPE html^>  >> index.html
@@ -89,7 +89,7 @@ echo    nTimer++;			>>index.html
 echo    var t = document.getElementById("timerShow"); 		>> index.html
 echo    var p = document.getElementById("mp3Player"); 		>> index.html
 echo	t.innerHTML = nTimer + ": " + p.currentTime + "/" + p.duration;		>> index.html
-echo	if(p.ended) xdTest(oldBtn.id+1);	>>index.html
+echo	if(p.ended) xdTest(parseInt(oldBtn.id)+1);	>>index.html
 echo }>>index.html
 
 echo function xdTest(id){	>>index.html
