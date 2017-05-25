@@ -1,4 +1,4 @@
-del index.html
+del index.html 
 echo ^<!DOCTYPE html^>  >>index.html
 echo ^<html^>		>>index.html
 echo ^<head^>		>>index.html
