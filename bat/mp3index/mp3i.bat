@@ -1,10 +1,9 @@
-
 del index.html
 echo ^<!DOCTYPE html^>  >>index.html
 echo ^<html^>		>>index.html
 echo ^<head^>		>>index.html
 echo ^<title^>		>>index.html
-echo v0.1.2	>>index.html 
+echo v0.1.3		>>index.html 
 echo ^</title^>		>>index.html
 
 echo ^<style^>				>>index.html
@@ -50,7 +49,7 @@ echo     display: block;				>>index.html
 echo     text-align: left;				>>index.html
 echo   }						>>index.html
 echo }							>>index.html
-echo ^</style^>						>>index.html							>>index.html
+echo ^</style^>						>>index.html
 
 echo ^</head^>	>> 	index.html
 echo ^<body^>	>> 	index.html
@@ -58,10 +57,11 @@ echo ^<body^>	>> 	index.html
 
 echo ^<div class="topnav" id="myTopnav"^>						>>index.html
 echo   ^<a target="_blank" href="http:www.beautifullover.org"^>Beautifullover^</a^>							>>index.html
-echo   ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp3index/mp3i.bat"^>mp3i.bat*^</a^>							>>index.html
-echo   ^<a target="_blank" href="https://littleflute.github.io/beautifullover.org/"^>beautifullover_github^</a^>						>>index.html
+echo   ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp3index/mp3i.bat"^>mp3i.bat*^</a^>			>>index.html
+echo   ^<a target="_blank" href="https://littleflute.github.io/beautifullover.org/"^>beautifullover_github^</a^>			>>index.html
 echo   ^<a target="_blank" href="https://littleflute.github.io/blog"^>blog^</a^>							>>index.html
-echo   ^<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"^>^&#9776;^</a^> 	>>index.html
+echo   ^<a target="_blank" href="https://github.com/settings/repositories"^>repositories^</a^>						>>index.html
+
 echo ^</div^>							>>index.html
 
 
@@ -249,7 +249,7 @@ echo }									>>index.html
 
 echo //*==================================				>>index.html
  
-echo var me = new mp3Engine("v0.9.8");					>>index.html 
+echo var me = new mp3Engine("v0.9.11");					>>index.html 
 echo //*/	>>index.html
 echo ^</script^>							>>index.html
 
