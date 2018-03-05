@@ -3,7 +3,7 @@ echo ^<!DOCTYPE html^>  >>index.html
 echo ^<html^>		>>index.html
 echo ^<head^>		>>index.html
 echo ^<title^>		>>index.html
-echo v0.1.3		>>index.html 
+echo v0.1.11		>>index.html 
 echo ^</title^>		>>index.html
 
 echo ^<style^>				>>index.html
@@ -61,11 +61,12 @@ echo   ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/
 echo   ^<a target="_blank" href="https://littleflute.github.io/beautifullover.org/"^>beautifullover_github^</a^>			>>index.html
 echo   ^<a target="_blank" href="https://littleflute.github.io/blog"^>blog^</a^>							>>index.html
 echo   ^<a target="_blank" href="https://github.com/settings/repositories"^>repositories^</a^>						>>index.html
+echo   ^<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"^>^&#9776;^</a^> 	>>index.html
 
 echo ^</div^>							>>index.html
 
 
-echo ^<div style="padding-left:16px"^>							>>index.html
+echo ^<div id = "id_div_wrap_4_plx" style="padding-left:16px"^>							>>index.html
 echo   ^<h2^>Responsive Topnav Example^</h2^>							>>index.html
 echo   ^<p^>Resize the browser window to see how it works.^</p^>							>>index.html
 echo   ^<div id = "fileListID" style="border:1px red solid;"^>^</div^>				>>index.html
@@ -248,11 +249,15 @@ echo }									>>index.html
 
 
 echo //*==================================				>>index.html
- 
-echo var me = new mp3Engine("v0.9.11");					>>index.html 
+  
+echo var me = new mp3Engine("v0.9. 13 ");					>>index.html 
 echo //*/	>>index.html
 echo ^</script^>							>>index.html
 
+echo ^<script src="https://littleflute.github.io/vc6/XdHtml/blclass.js" type="text/javascript"^>^</script^>		>>index.html
+echo ^<script^>								>> index.html
+echo blo0.blScript("id_script_plx","plx.js");	>> index.html
 
+echo ^</script^>							>>index.html
 echo ^</body^>	>> 	index.html
 echo ^</html^>	>> 	index.html
