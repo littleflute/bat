@@ -1,19 +1,20 @@
 //*---------------------------------				
 function mp3Engine(ver){						
-   this.v 		= ver;						
-   this.p 		= document.getElementById("mp3Player");		
-   this.p.nTime	= 0;						
-   this.p.boss	= this;	
+   this.v 		= ver;		
 
 	var s = "player_" + ver;
 	s += "<a target = '_blank' href='https://littleflute.github.io/bat/mp3/MereChristianity/cd1/player.js'>player.js</a> - ";
 	s += "<a target = '_blank' href='https://github.com/littleflute/bat/edit/master/mp3/MereChristianity/cd1/player.js'>player.js*</a>";
 
-   this.p.UI = blo0.blMDiv(document.body,"id_mdiv_4_player_ui",s,300,100,400,300,blColor[4]);					
-   this.p.btn  	=  document.createElement("button");		
-   this.p.btn.innerHTML	= "+";					
-   this.p.btn.boss	= this.p;					
-   document.body.appendChild(this.p.btn);				
+   	var _ui = blo0.blMDiv(document.body,"id_mdiv_4_player_ui",s,300,100,400,300,blColor[4]);	
+	_ui.v1 = blo0.blDiv(_ui,_ui.id+"v1","v1",blColor[1]);	
+	blo0.blAudio (_ui.v1,"mp3Player","1.mp3");				
+   this.p 		= document.getElementById("mp3Player");		
+   this.p.nTime	= 0;						
+   this.p.boss	= this;	
+			
+   this.p.btn  	=  blo0.blBtn(_ui.v1,_ui.v1.id + "btn","+",blGrey[0]);					
+   this.p.btn.boss	= this.p;	 				
    var v = this.p.view  	= document.createElement("div");	
    v.style.border 		= "1px blue solid";			
    v.style.display   	= "none";				
@@ -80,4 +81,4 @@ function mp3Engine(ver){
    document.title = this.v;					
 }									
 //*==================================				
-var me = new mp3Engine("v0.11. 21 ");
+var me = new mp3Engine("v0.11. 24 ");
