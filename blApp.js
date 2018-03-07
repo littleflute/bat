@@ -1,7 +1,26 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.11";
+	this.v = "v0.0.12";
+	this.blrF1 = function(b,d){
+		d.innerHTML = "";
+		var v = d.innerHTML;
+		function _loadIssue2Comments(o) {
+			var a = o[0].body;
+			var b = a.split("~~~html");
+			var c = b[1].split("~~~"); 
+			v += c[0]; 
+			v += "<br>";
+
+			var a = o[1].body;
+			var b = a.split("~~~html");
+			var c = b[1].split("~~~");
+			var nb = bl$("mySidebar");
+			
+			v += c[1]; 
+		}
+		w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/2/comments", _loadIssue2Comments);		
+	}
 }
 function CBlAppClass()
 {
