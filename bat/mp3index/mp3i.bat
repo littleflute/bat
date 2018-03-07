@@ -3,7 +3,7 @@ echo ^<!DOCTYPE html^>  >>index.html
 echo ^<html^>		>>index.html
 echo ^<head^>		>>index.html
 echo ^<title^>		>>index.html
-echo v0.1.11		>>index.html 
+echo v0.1.12		>>index.html 
 echo ^</title^>		>>index.html
 
 echo ^<style^>				>>index.html
@@ -94,10 +94,7 @@ echo        x.appendChild(e);						>>index.html
 echo    }								>>index.html
 echo }									>>index.html
 echo ^</script^>							>>index.html
-
-echo ^<script src="m.js"^>							>>index.html
-echo ^</script^>							>>index.html
-
+ 
 echo ^<script id="s1"^>							>>index.html
 echo     addDiv2Div("fileListID","xddbg","title");				>>index.html
  
@@ -164,98 +161,12 @@ echo 	};		>> index.html
 echo 	xmlhttp.open("GET", "https://littleflute.github.io/Elton-John/l.json", true);	>>index.html
 echo 	xmlhttp.send();							>>index.html
 
-
-echo //*---------------------------------				>>index.html
-echo function mp3Engine(ver){						>>index.html
-echo    this.v 		= ver;						>>index.html
-echo    this.p 		= document.getElementById("mp3Player");		>>index.html
-echo    this.p.nTime	= 0;						>>index.html
-echo	this.p.boss	= this;						>>index.html
-echo    this.p.btn  	= document.createElement("button");		>>index.html
-echo    this.p.btn.innerHTML	= "+";					>>index.html
-echo    this.p.btn.boss	= this.p;					>>index.html
-echo    document.body.appendChild(this.p.btn);				>>index.html
-echo    var v = this.p.view  	= document.createElement("div");	>>index.html
-echo    v.style.border 		= "1px blue solid";			>>index.html
-echo    v.style.display   	= "none";				>>index.html
-echo    v.id			= "playerView";				>>index.html
-echo    document.body.appendChild(this.p.view);				>>index.html
-echo    this.p.btn.onclick	= function(){				>>index.html
-echo        if(this.innerHTML=="+"){					>>index.html
-echo           this.innerHTML="-";					>>index.html
-echo           this.boss.view.style.display="block";			>>index.html
-echo        }								>>index.html
-echo        else if(this.innerHTML=="-"){				>>index.html
-echo           this.innerHTML="+";					>>index.html
-echo           this.boss.view.style.display="none";			>>index.html
-echo        }								>>index.html
-echo    }								>>index.html
-
-echo    this.setVolume 	= function(v){					>>index.html
-echo         this.p.volume = v;						>>index.html
-echo    }								>>index.html
-
-echo    this.setLyricFile = function(filePath){				>>index.html 
-echo        var t 	= document.getElementById("playerView"); 	>>index.html
-echo        var divLyr 	= document.createElement("div"); 		>>index.html
-echo        divLyr.id	= "divLyrID";			 		>>index.html
-echo        divLyr.src 	= filePath; 					>>index.html
-echo        divLyr.style.border = "1px red solid"; 			>>index.html
-echo        divLyr.update	= function(c,d){			>>index.html
-echo            var s	= divLyr.src + ":" + c + "/" + d;		>>index.html
-echo            divLyr.innerHTML = s;					>>index.html
-echo        } 								>>index.html
-echo         t.appendChild(divLyr); 					>>index.html
-echo        divLyr.update(0,0);						>>index.html
-echo    }								>>index.html
-
-echo    this. playId = function (id){					>>index.html
-echo      var b = document.getElementById(id);				>>index.html 
-echo      if(b==null) b = document.getElementById("1");			>>index.html
-echo      this.play(b);							>>index.html
-echo    }								>>index.html
-
-echo     this.oldBtn = null;						>>index.html
-echo     this.play	= function (o){					>>index.html
-echo         if(this.oldBtn) {						>>index.html
-echo             this.oldBtn.style.backgroundColor = "green";}		>>index.html
-echo 	     var p = document.getElementById("mp3Player");		>>index.html
-echo         var s = o.innerHTML; 					>>index.html
-echo         s = s.split(":");						>>index.html
-echo 	     p.src = s[1];						>>index.html
-echo 	     p.play();							>>index.html
-echo 	     var s = document.getElementById("curSong");		>>index.html
-echo 	     if(s) s.innerHTML = p.src;					>>index.html
-echo         o.style.backgroundColor="yellow";				>>index.html
-echo         this.oldBtn = o;						>>index.html
-echo     }								>>index.html
  
-echo     this.myTimeFun = function(){	 				>>index.html
-echo        var t = document.getElementById("timerShow");		>>index.html
-echo        var p = document.getElementById("mp3Player"); 		>>index.html
-echo        var lr = document.getElementById("divLyrID");		>>index.html
-echo        lr.update(p.currentTime,p.duration);			>>index.html
-echo        p.nTime++;							>>index.html
-echo	    var s = p.nTime + ": " + p.currentTime + "/" + p.duration;	>>index.html 
-echo        t.innerHTML = s;						>>index.html
-echo	    if(p.ended) p.boss.playId(parseInt(p.boss.oldBtn.id)+1);	>>index.html
-echo    }								>>index.html
-
-echo    setInterval(this.myTimeFun, 1000);				>>index.html
-echo    this.setVolume(0.2);						>>index.html
-echo    this.setLyricFile("xdLrc.lrc");					>>index.html	
-echo    document.title = this.v;					>>index.html
-echo }									>>index.html
-
-
-echo //*==================================				>>index.html
-  
-echo var me = new mp3Engine("v0.9. 13 ");					>>index.html 
-echo //*/	>>index.html
 echo ^</script^>							>>index.html
 
 echo ^<script src="https://littleflute.github.io/vc6/XdHtml/blclass.js" type="text/javascript"^>^</script^>		>>index.html
 echo ^<script^>								>> index.html
+echo blo0.blScript("id_script_player","player.js");	>> index.html
 echo blo0.blScript("id_script_plx","plx.js");	>> index.html
 
 echo ^</script^>							>>index.html
