@@ -1,7 +1,7 @@
 ﻿
 function CXdMainFrame()
 {
-	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "v0.1. 133 " , 0,0,50,50, blColor[2]);  
+	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "v0.1. 134 " , 0,0,50,50, blColor[2]);  
 	mfUI.style.position = "fixed";
 	mfUI.style.top = "50px";
 	mfUI.style.left = "1px"; 
@@ -23,7 +23,7 @@ function CXdMainFrame()
     	var s = 'links: ';
      	s += '<a href="https://littleflute.github.io/blog" target="_blank">blog</a>-';
      	s += '<a href="https://littleflute.github.io/xd" target="_blank">xd</a><br>-';
-     	s += '<a href="blApp.js" target="_blank">blApp.js</a>';
+     	s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
      	s += '<a href="https://github.com/littleflute/bat/edit/master/blApp.js" target="_blank">blApp.js*</a>';
 	mfUI.d.d3	= blo0.blDiv(mfUI.d,mfUI.d.id+"d3",s,blGrey[0]);	 
 
