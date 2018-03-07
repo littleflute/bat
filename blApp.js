@@ -1,7 +1,10 @@
-﻿
+function _myJobClass()
+{
+	this.v = "v0.0.1";
+}
 function CXdMainFrame()
 {
-	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "v0.1. 134 " , 0,0,50,50, blColor[2]);  
+	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "CXdMainFrame - mfUI: v0.1. 135 " , 0,0,50,50, blColor[2]);  
 	mfUI.style.position = "fixed";
 	mfUI.style.top = "50px";
 	mfUI.style.left = "1px"; 
@@ -18,9 +21,9 @@ function CXdMainFrame()
  	mfUI.b1.click();
  	mfUI.b1.click();
 
-	mfUI.d.d2	= blo0.blDiv(mfUI.d,mfUI.d.id+"d2","",blColor[1]); 
+	mfUI.d.d2	= blo0.blDiv(mfUI.d,mfUI.d.id+"d2","mfUI.d.d2",blColor[1]); 
 
-    	var s = 'links: ';
+    	var s = 'mfUI.d.d3: ';
      	s += '<a href="https://littleflute.github.io/blog" target="_blank">blog</a>-';
      	s += '<a href="https://littleflute.github.io/xd" target="_blank">xd</a><br>-';
      	s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
