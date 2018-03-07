@@ -1,7 +1,7 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.23";
+	this.v = "v0.0.24";
 	this.blrF1 = function(b,d){
 		if(!d.v){
 			d.v = blo0.blDiv(d,d.id+"v","v",blColor[0]);
