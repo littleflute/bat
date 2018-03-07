@@ -3,7 +3,7 @@ echo ^<!DOCTYPE html^>  >>index.html
 echo ^<html^>		>>index.html
 echo ^<head^>		>>index.html
 echo ^<title^>		>>index.html
-echo v0.1.13		>>index.html 
+echo v0.1. 14 >>index.html 
 echo ^</title^>		>>index.html
 
 echo ^<style^>				>>index.html
@@ -140,12 +140,7 @@ for /F "delims=" %%a in ('dir /b *.mp3') do (
 	echo ^<button id = "!x!" onclick="me.play(this)"^>!x!:%%a^</button^> >>index.html
 )
  
-
-echo ^<br^>^<audio id="mp3Player0" controls^> 	>>index.html
-echo 	^<source src="01 Owner of a Lonely Heart.mp3" type="audio/mpeg"^>	>>index.html
-echo	Your browser does not supoort hte audio element!	>>index.html
-echo ^</audio^>		>>index.html
-
+ 
 echo ^<div id="timerShow" style="border:1px solid blue;"^>^</div^>	>>index.html
 echo ^<button onclick="me.playId(1)"^>test^</button^>	>>index.html
 
