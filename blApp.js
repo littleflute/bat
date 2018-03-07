@@ -10,7 +10,7 @@ function _myJobClass()
 }
 function CXdMainFrame()
 {
-	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "mfUI: v0.1. 145 " , 0,0,150,50, blColor[2]);  
+	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "mfUI: v0.1. 151 " , 0,0,150,50, blColor[2]);  
 	mfUI.style.position = "fixed";
 	mfUI.style.top = "50px";
 	mfUI.style.left = "1px"; 
