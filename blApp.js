@@ -1,9 +1,9 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.14";
+	this.v = "v0.0.15";
 	this.blrF1 = function(b,d){
-		d.innerHTML = "xd1"; 
+		d.innerHTML = "blrF1 <br>"; 
 		function _loadIssue3Comments(o) {
 			var a = o[0].body;
 			var b = a.split("~~~html");
