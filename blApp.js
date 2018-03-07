@@ -1,12 +1,12 @@
 function _myJobClass()
 {
-	this.v = "v0.0.4";
+	this.v = "v0.0.5";
 	this.blrAboutMe = function(b,d){
 		if(!d.v){
 			var s = 'blrAboutMe:<br> '; 
      			s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
      			s += '<a href="https://github.com/littleflute/bat/edit/master/blApp.js" target="_blank">blApp.js*</a>';
-			d.v	= blo0.blDiv(d,d.id+"v",s,blGrey[5]);
+			d.v	= blo0.blDiv(d,d.id+"v",s,blColor0]);
 		}
 		_on_off_div(b,d);b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 	}
