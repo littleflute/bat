@@ -23,7 +23,7 @@ function CXdMainFrame()
 	var s = "<div id = 'id_div_toolbar_4_blApp' style='width:100%;height:50px;'>v0.1. 51 </div>"; 
 	mfUI.d 	= blo0.blMDiv(mfUI, "id_div_CXdMainFrame_ui" ,s,0,150,190,20,blColor[1]);   
 	mfUI.d.jobView = blo0.blDiv(mfUI.d,mfUI.d.id + "jobView","jobView",blColor[4]);
-	blo0.blShowObj2Div(mfUI.d.jobView,new _myJobClass);
+	//blo0.blShowObj2Div(mfUI.d.jobView,new _myJobClass);
 	mfUI.d.followDiv = mfUI;
 
 	mfUI.b1.onclick = function(){
@@ -38,7 +38,7 @@ function CXdMainFrame()
 	CXdBtn_Handle_Main ( 'id_div_toolbar_4_blApp' ); 
 }
 
-﻿function CXdBtn_Handle_Main (idDivBoss)
+function CXdBtn_Handle_Main (idDivBoss)
 { 
 	var o	= bl$(idDivBoss);  
 	o.hm	= blo0.blDiv(o,o.id+"hm","",blColor[1]); 
@@ -49,8 +49,5 @@ function CXdMainFrame()
 	} 
 	o.b2.click();	o.b2.click();
 }
-function CXdAPP()
-{
-    var f = new CXdMainFrame;    
-}
-var gApp = new CXdAPP;  
+
+var f = new CXdMainFrame;    
