@@ -1,4 +1,4 @@
-var _v = "v0.0.12";
+var _v = "v0.0.13";
 var s = "plx_" + _v;
 s += "<a target = '_blank' href='https://littleflute.github.io/bat/mp3/MereChristianity/cd1/plx.js'>plx.js</a> - ";
 s += "<a target = '_blank' href='https://github.com/littleflute/bat/edit/master/mp3/MereChristianity/cd1/plx.js'>plx.js*</a>";
