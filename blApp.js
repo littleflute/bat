@@ -1,9 +1,9 @@
 function _myJobClass()
 {
-	this.v = "v0.0.3";
+	this.v = "v0.0.4";
 	this.blrAboutMe = function(b,d){
 		if(!d.v){
-			var s = 'blrAboutMe: '; 
+			var s = 'blrAboutMe:<br> '; 
      			s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
      			s += '<a href="https://github.com/littleflute/bat/edit/master/blApp.js" target="_blank">blApp.js*</a>';
 			d.v	= blo0.blDiv(d,d.id+"v",s,blGrey[5]);
