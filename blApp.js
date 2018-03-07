@@ -1,7 +1,7 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.21";
+	this.v = "v0.0.22";
 	this.blrF1 = function(b,d){
 		d.innerHTML = "blrF1 <br>"; 
 		function _loadIssue3Comments(o) {
