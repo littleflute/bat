@@ -1,7 +1,7 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.12";
+	this.v = "v0.0.13";
 	this.blrF1 = function(b,d){
 		d.innerHTML = "";
 		var v = d.innerHTML;
@@ -19,7 +19,7 @@ function _myJobClass()
 			
 			v += c[1]; 
 		}
-		w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/2/comments", _loadIssue2Comments);		
+		w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/3/comments", _loadIssue2Comments);		
 	}
 }
 function CBlAppClass()
