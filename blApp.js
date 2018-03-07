@@ -1,20 +1,24 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.22";
+	this.v = "v0.0.23";
 	this.blrF1 = function(b,d){
-		d.innerHTML = "blrF1 <br>"; 
-		function _loadIssue3Comments(o) {
-			for(i in o){
-				var a = o[i].body;
-				var b = a.split("~~~html");
-				var c = b[1].split("~~~"); 
-				d.innerHTML += c[0]; 
-				d.innerHTML += "<br>";
+		if(!d.v){
+			d.v = blo0.blDiv(d,d.id+"v","v",blColor[0]);
+			d.v.innerHTML = "blrF1 <br>"; 
+			function _loadIssue3Comments(o) {
+				for(i in o){
+					var a = o[i].body;
+					var b = a.split("~~~html");
+					var c = b[1].split("~~~"); 
+					d.v.innerHTML += c[0]; 
+					d.v.innerHTML += "<br>";
+				}
+
 			}
- 
+			w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/3/comments", _loadIssue3Comments);		
 		}
-		w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/3/comments", _loadIssue3Comments);		
+		_on_off_div(b,d);
 	}
 }
 function CBlAppClass()
