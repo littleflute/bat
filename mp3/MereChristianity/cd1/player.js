@@ -4,7 +4,12 @@ function mp3Engine(ver){
    this.p 		= document.getElementById("mp3Player");		
    this.p.nTime	= 0;						
    this.p.boss	= this;	
-   this.p.UI = blo0.blMDiv(document.body,"id_mdiv_4_player_ui","playerUI_" + ver,300,100,400,300,blColor[4]);					
+
+	var s = "player_" + ver;
+	s += "<a target = '_blank' href='https://littleflute.github.io/bat/mp3/MereChristianity/cd1/player.js'>player.js</a> - ";
+	s += "<a target = '_blank' href='https://github.com/littleflute/bat/edit/master/mp3/MereChristianity/cd1/player.js'>player.js*</a>";
+
+   this.p.UI = blo0.blMDiv(document.body,"id_mdiv_4_player_ui",s,300,100,400,300,blColor[4]);					
    this.p.btn  	=  document.createElement("button");		
    this.p.btn.innerHTML	= "+";					
    this.p.btn.boss	= this.p;					
@@ -75,4 +80,4 @@ function mp3Engine(ver){
    document.title = this.v;					
 }									
 //*==================================				
-var me = new mp3Engine("v0.11. 14 ");
+var me = new mp3Engine("v0.11. 15 ");
