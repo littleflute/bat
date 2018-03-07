@@ -1,11 +1,11 @@
   
 function _myJobClass()
 {
-	this.v = "v0.0.24";
-	this.blrF1 = function(b,d){
+	this.v = "v0.0.25";
+	this.blrIssue3Comments = function(b,d){
 		if(!d.v){
 			d.v = blo0.blDiv(d,d.id+"v","v",blColor[0]);
-			d.v.innerHTML = "blrF1 <br>"; 
+			d.v.innerHTML = "_loadIssue3Comments <br>"; 
 			function _loadIssue3Comments(o) {
 				for(i in o){
 					var a = o[i].body;
