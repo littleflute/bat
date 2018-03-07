@@ -1,16 +1,19 @@
 function _myJobClass()
 {
-	this.v = "v0.0.2";
+	this.v = "v0.0.3";
 	this.blrAboutMe = function(b,d){
-		var s = 'blrAboutMe: '; 
-     		s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
-     		s += '<a href="https://github.com/littleflute/bat/edit/master/blApp.js" target="_blank">blApp.js*</a>';
-		d.v	= blo0.blDiv(d,d.id+"v",s,blGrey[0]);
+		if(!d.v){
+			var s = 'blrAboutMe: '; 
+     			s += '<a href="blApp.js" target="_blank">blApp.js</a> - ';
+     			s += '<a href="https://github.com/littleflute/bat/edit/master/blApp.js" target="_blank">blApp.js*</a>';
+			d.v	= blo0.blDiv(d,d.id+"v",s,blGrey[5]);
+		}
+		_on_off_div(b,d);b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 	}
 }
 function CXdMainFrame()
 {
-	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "mfUI: v0.1. 151 " , 0,0,150,50, blColor[2]);  
+	var mfUI = blo0.blMDiv(document.body, "id_div_CXdMainFrame" , "mfUI: v0.1. 152 " , 0,0,150,50, blColor[2]);  
 	mfUI.style.position = "fixed";
 	mfUI.style.top = "50px";
 	mfUI.style.left = "1px"; 
@@ -29,9 +32,7 @@ function CXdMainFrame()
  	mfUI.b1.click();
  	mfUI.b1.click();
 
-	mfUI.d.d2	= blo0.blDiv(mfUI.d,mfUI.d.id+"d2","mfUI.d.d2",blColor[1]); 
-
-    		 
+	mfUI.d.d2	= blo0.blDiv(mfUI.d,mfUI.d.id+"d2","mfUI.d.d2",blColor[1]);  		 
 
 	_load_plx_btn(blo0,mfUI.d.d2,"_xdPlxSet","http://www.beautifullover.org/zb_users/theme/HTML5CSS3/script/xdPlxSet.js","lightblue"); 
 	CXdBtn_Handle_Main ( 'id_div_toolbar_4_blApp' ); 
