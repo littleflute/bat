@@ -1,4 +1,4 @@
-var _g_ver_blAppPlx = "v0.1.14";
+var _g_ver_blAppPlx = "v0.1.15";
 
 function _plxJobClass()
 { 
@@ -55,3 +55,5 @@ function CBlAppPlxClass()
 }
  
 var _blAppPlx = new CBlAppPlxClass;    
+	bl$("blrIssue3C").click();	bl$("blrIssue3C").click();
+	bl$("blrAboutPlx").click();	bl$("blrAboutPlx").click();
