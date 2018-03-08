@@ -1,4 +1,4 @@
-var _g_ver_blAppPlx = "v0.1.13";
+var _g_ver_blAppPlx = "v0.1.14";
 
 function _plxJobClass()
 { 
@@ -16,7 +16,7 @@ function _plxJobClass()
 				}
 
 			}
-			w3.getHttpObject("https://api.github.com/repos/littleflute/JavaScript/issues/3/comments", _loadIssue3Comments);		
+			w3.getHttpObject("https://api.github.com/repos/littleflute/bat/issues/3/comments", _loadIssue3Comments);		
 		}
 		_on_off_div(b,d);
 		
