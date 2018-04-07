@@ -1,15 +1,12 @@
-rem v1.2.2
-
 del index.html
-
-
 
 @echo off
 echo ^<!DOCTYPE html^>	>>index.html  
 echo ^<html^> >>index.html 
 echo ^<body^> >>index.html
 echo %1 >>index.html
-echo ^<br^> >>index.html
+
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 12 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html
 echo ^<button onclick="getCurTime()" type="button"^>Get current time position^</button^> >>index.html 
