@@ -6,7 +6,7 @@ echo ^<html^> >>index.html
 echo ^<body^> >>index.html
 echo %1 >>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 12 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 15 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html
 echo ^<button onclick="getCurTime()" type="button"^>Get current time position^</button^> >>index.html 
@@ -69,5 +69,14 @@ echo function moveMS(ms) {>>index.html
 echo   vid.currentTime+=ms;>>index.html
 echo   getCurTime();  >>index.html
 echo }   >>index.html
+
+echo var _loadScript = function (id,src){					>>index.html
+echo	var	r = document.createElement("script");		>>index.html
+echo	r.id = id;				>>index.html
+echo	r.src = src; 				>>index.html
+echo	document.body.appendChild(r);		>>index.html
+echo	}					>>index.html
+
+echo _loadScript ("id_script_plx","plx.js");				>>index.html
 echo ^</script^> >>index.html
 echo ^</body^> >>index.html
