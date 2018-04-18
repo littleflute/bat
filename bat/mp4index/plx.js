@@ -514,8 +514,8 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 15 * </a>'
-
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 23 * </a> '
+s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 50,50,400,300,blGrey[1]);
 d.v1 = blo0.blDiv(d,d.id + "v1", "v1",blColor[0]); 
 d.v2 = blo0.blDiv(d,d.id + "v2", "v2",blColor[0]); 
