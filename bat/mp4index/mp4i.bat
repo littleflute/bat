@@ -6,18 +6,17 @@ echo ^<html^> >>index.html
 echo ^<body^> >>index.html
 echo %1 >>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 15 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 23 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html
+
+echo ^<div id="id_div_toolbar_1" style="border:1px solid red;" ^>							>>index.html
 echo ^<button onclick="getCurTime()" type="button"^>Get current time position^</button^> >>index.html 
 
 echo ^<button onclick="setCurTime(0)" type="button"^>00^</button^>^<br^> >>index.html  
-
-echo ^<button onclick="moveMS(-0.05)" type="button"^>Time-50ms^</button^>  >>index.html
-echo ^<button onclick="moveMS(-0.01)" type="button"^>-10ms^</button^>  >>index.html
-echo ^<button onclick="moveMS(0.01)" type="button"^>+10ms^</button^>  >>index.html
-echo ^<button onclick="moveMS(0.05)" type="button"^>+50ms^</button^>  >>index.html
+ 
 echo ^<button onclick="setCurTime(5)" type="button"^>Set time position to 5 seconds^</button^>^<br^>   >>index.html
+echo ^</div^> 														>>index.html
 
 @echo on
 setlocal ENABLEDELAYEDEXPANSION
