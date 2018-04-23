@@ -514,7 +514,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 141 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 224 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -536,12 +536,23 @@ d.v3. selBtn = function(_btn){
 		}
 	}	
 }
+d.v3. go2t = function( _v, _t ){ 
+	var bs = d.v3.bs;
+	for(i in bs){
+		var ii = bs[i];
+		var dt = _t - ii.t;
+		if( dt < 0.5 && dt > -0.5  ) {
+			ii.click();			
+		}
+	}	  
+	_v.innerHTML = _t + " : " + dt1 ;
+}
 d.v3. b1.onclick = function(){
 	d.v3.now.t = vid.currentTime;
 }
 d.v3.b0.onclick = function(){
 	if(!d.v3.bs){d.v3.bs = [];}
-	var t = vid.currentTime;
+	var t = vid. currentTime;
 	var n = d.v3.bs.length + 1;
 	var b = blo0.blBtn(d.v3, d.v3.id + n, n,blGrey[5]);
 	d.v3.bs.push(b);	
@@ -563,7 +574,15 @@ d.v4.b0.onclick = function(){
 	}
 }
 var _f = "a.mp3";
-blo0.blAudio (d.v0,"id_mp3Player",_f);
+blo0.blAudio (d.v0, "id_mp3Player" , _f);
+d.v0.d1 = blo0.blDiv(d.v0,d.v0.id + "d1", "d1",blColor[4]); 
+function _TimeFun(){
+	var au = bl$("id_mp3Player");
+	var t = au. currentTime;
+	var dt = d.v3. go2t (d.v0.d1, t );
+}
+setInterval(_TimeFun , 100);      
+
 
 _addBtn(d.v1,0.05,"+50ms");
 _addBtn(d.v1,0.1,"+100ms");
