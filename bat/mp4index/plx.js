@@ -514,7 +514,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 133 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 141 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -524,24 +524,32 @@ d.v3 = blo0.blDiv(d,d.id + "v3", "v3",blColor[3]);
 d.v4 = blo0.blDiv(d,d.id + "v4", "v4",blColor[4]); 
 d.v5 = blo0.blDiv(d,d.id + "v5", "v5",blColor[5]); 
 d.v3.b0 = blo0.blBtn(d.v3,d.v3.id + "b0", "b0",blGrey[0]); 
+d.v3.b1 = blo0.blBtn(d.v3,d.v3.id + "b1", "set",blGrey[0]); 
+d.v3.now = null;
 d.v3. selBtn = function(_btn){
 	var bs = d.v3.bs;
 	for(i in bs){
 		var ii = bs[i]; ii. style. backgroundColor = blGrey[0];
 		if(_btn == ii) {
 			ii. style. backgroundColor = blColor[7];
+			d.v3.now = _btn;
 		}
 	}	
+}
+d.v3. b1.onclick = function(){
+	d.v3.now.t = vid.currentTime;
 }
 d.v3.b0.onclick = function(){
 	if(!d.v3.bs){d.v3.bs = [];}
 	var t = vid.currentTime;
-	var b = blo0.blBtn(d.v3, d.v3.id + d.v3.bs.length, d.v3.bs.length,blGrey[5]);
+	var n = d.v3.bs.length + 1;
+	var b = blo0.blBtn(d.v3, d.v3.id + n, n,blGrey[5]);
 	d.v3.bs.push(b);	
 	b.onclick = function(_v,_t){
+		b.t = _t;
 		return function(){
 			_v. selBtn (this);
-			setCurTime(_t);
+			setCurTime(this.t);
 		}
 	}(d.v3,t);
 }
