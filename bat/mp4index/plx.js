@@ -514,27 +514,38 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 113 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 133 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
+d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
 d.v1 = blo0.blDiv(d,d.id + "v1", "v1",blColor[1]); 
 d.v2 = blo0.blDiv(d,d.id + "v2", "v2",blColor[2]); 
 d.v3 = blo0.blDiv(d,d.id + "v3", "v3",blColor[3]); 
 d.v4 = blo0.blDiv(d,d.id + "v4", "v4",blColor[4]); 
 d.v5 = blo0.blDiv(d,d.id + "v5", "v5",blColor[5]); 
 d.v3.b0 = blo0.blBtn(d.v3,d.v3.id + "b0", "b0",blGrey[0]); 
+d.v3. selBtn = function(_btn){
+	var bs = d.v3.bs;
+	for(i in bs){
+		var ii = bs[i]; ii. style. backgroundColor = blGrey[0];
+		if(_btn == ii) {
+			ii. style. backgroundColor = blColor[7];
+		}
+	}	
+}
 d.v3.b0.onclick = function(){
-	if(!d.v3.n){d.v3.n = 0;}
-	d.v3.n++;
+	if(!d.v3.bs){d.v3.bs = [];}
 	var t = vid.currentTime;
-	var b = blo0.blBtn(d.v3, d.v3.id + d.v3.n, d.v3.n,blGrey[5]);
-	b.onclick = function(_t){
+	var b = blo0.blBtn(d.v3, d.v3.id + d.v3.bs.length, d.v3.bs.length,blGrey[5]);
+	d.v3.bs.push(b);	
+	b.onclick = function(_v,_t){
 		return function(){
+			_v. selBtn (this);
 			setCurTime(_t);
 		}
-	}(t);
+	}(d.v3,t);
 }
-d.v4.b0 = blo0.blBtn(d.v4,d.v4.id + "b0", "b0",blGrey[0]); 
+d.v4.b0 = blo0.blBtn(d.v4,d.v4.id + "b0", "JPGs",blGrey[0]); 
 d.v4.b0.onclick = function(){
 	var s = bl$("id_div_4_jpg").innerHTML;
 	var a = s.split(",");
@@ -543,6 +554,9 @@ d.v4.b0.onclick = function(){
 		v.innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
 	}
 }
+var _f = "a.mp3";
+blo0.blAudio (d.v0,"id_mp3Player",_f);
+
 _addBtn(d.v1,0.05,"+50ms");
 _addBtn(d.v1,0.1,"+100ms");
 _addBtn(d.v1,0.2,"+200ms");
