@@ -1,4 +1,6 @@
 // file: blclass.js    by littleflute 
+
+
 var _load_plx_btn = function(blo,oBoss,plxName,src, color ){
 			var idBtn	= oBoss.id + plxName + "btn";
 			var b		=  blo.blBtn(oBoss,idBtn,plxName,color);
@@ -514,7 +516,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 224 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 231 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -573,6 +575,22 @@ d.v4.b0.onclick = function(){
 		v.innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
 	}
 }
+d.v4.b1 = blo0.blBtn(d.v4,d.v4.id + "b1", "getIssue",blGrey[1]); 
+d.v4.b1.onclick = function(){ 
+	var _f = function (o){
+	    alert(o);	
+            for(i in o){
+                    //o[i].body;
+
+            }  
+         }
+         w3.getHttpObject("https://api.github.com/repos/littleflute/english/issues/79/comments", _f);	
+}
+
+
+
+
+
 var _f = "a.mp3";
 blo0.blAudio (d.v0, "id_mp3Player" , _f);
 d.v0.d1 = blo0.blDiv(d.v0,d.v0.id + "d1", "d1",blColor[4]); 
