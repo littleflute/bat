@@ -514,7 +514,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 232 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 235 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -577,9 +577,9 @@ d.v4.b1 = blo0.blBtn(d.v4,d.v4.id + "b1", "LoadIssue",blGrey[0]);
 d.v4.b1.onclick = function(){
 	//alert(window.location.href);
          var _f = function (o){
-		alert(o[0].body);
+		eval(o.body);
          }
-	w3.getHttpObject("https://api.github.com/repos/littleflute/english/issues/17/comments", _f);	
+	w3.getHttpObject("https://api.github.com/repos/littleflute/bluespiano/issues/1", _f);	
 }
 var _f = "a.mp3";
 blo0.blAudio (d.v0, "id_mp3Player" , _f);
