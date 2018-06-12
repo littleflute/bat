@@ -8,7 +8,7 @@ echo %1 >>index.html
 
 echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>		>>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 35 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 41 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html
 
@@ -24,6 +24,29 @@ echo ^</div^> 														>>index.html
 setlocal ENABLEDELAYEDEXPANSION
 call set /a x = 0
 for /F "delims="  %%a in ('dir /b *.mp4') do (
+	rem echo %%a >>index.html
+	if !x! == 10 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 20 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 30 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 40 (
+		echo ^<br^> >>index.html
+	)
+	call set /a x = !x! + 1
+	echo ^<button onclick="play('%%a')"^>!x!:%%a^</button^> >>index.html
+)
+@echo off  
+
+
+@echo on
+setlocal ENABLEDELAYEDEXPANSION
+call set /a x = 0
+for /F "delims="  %%a in ('dir /b *.mp3') do (
 	rem echo %%a >>index.html
 	if !x! == 10 (
 		echo ^<br^> >>index.html
