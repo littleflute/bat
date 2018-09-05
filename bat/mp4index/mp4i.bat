@@ -8,7 +8,7 @@ echo ^<body^> >>index.html
 
 echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>		>>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 54 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 111 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html 
 
@@ -68,7 +68,21 @@ for /F "delims="  %%a in ('dir /b *.jpg') do (
 	echo %%a, >>index.html
 )
 @echo off  
-echo ^</div^> 											>>index.html
+echo ^</div^> 								>>index.html	
+ 
+
+echo ^<br^> 	>>index.html
+echo ^<div id="id_div_4_png" style="border:1px solid blue;" ^>				>>index.html
+@echo on
+setlocal ENABLEDELAYEDEXPANSION
+call set /a x = 0
+for /F "delims="  %%a in ('dir /b *.png') do (
+	rem echo %%a >>index.html 
+	call set /a x = !x! + 1
+	echo %%a, >>index.html
+)
+@echo off  
+echo ^</div^> 												>>index.html
 
 echo ^<br^> >>index.html
 echo ^<video id="myVideo" width="720" height="480" controls^> >>index.html
