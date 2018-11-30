@@ -1,4 +1,6 @@
 // file: blclass.js    by littleflute 
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 324 * </a> ';
+
 var _load_plx_btn = function(blo,oBoss,plxName,src, color ){
 			var idBtn	= oBoss.id + plxName + "btn";
 			var b		=  blo.blBtn(oBoss,idBtn,plxName,color);
@@ -514,7 +516,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 251 * </a> '
+
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -568,6 +570,29 @@ d.v4.btnClearV5 = blo0.blBtn(d.v4,d.v4.id + "btnClearV5", "ClearV5",blGrey[1]);
 d.v4. btnClearV5 .onclick = function(){
 	d.v5.innerHTML = "";
 }
+
+d.v4. btnLRCs = blo0.blBtn(d.v4,d.v4.id + " btnLRCs ", " btnLRCs " ,blGrey[0]); 
+d.v4. btnLRCs . onclick = function(){
+	var d = bl$( "id_div_4_lrcJS" );
+	if(!d.v){
+		d.v = blo0.blMDiv(d, d.id + " v ", "LRCs" , 50, 50, 222, 100, blGrey [1] );		 
+		var tb  = blo0.blDiv(d.v, d.v.id + "_tb_" , 'tb' , blGrey [1]);		 
+  		var a = d.innerHTML.split(",");
+		for(var i=0; i< a.length - 1 ; i++){
+			var btnV = blo0.blDiv(tb, tb.id + " -btnV " + i, a[i], blColor[i]);
+			var btn = blo0.blBtn( btnV , btnV . id + " -btn " , a[i], blGrey [i]);
+			btn .onclick = function ( _this , _txt ){
+				return function(){ 
+					 blo0.blScript('id_script_' + _txt , _txt );
+				}
+			}(btn,a[i]);
+		} 
+
+	}
+	var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	 
+}
+
+
 d.v4.btnJPGs = blo0.blBtn(d.v4,d.v4.id + "btnJPGs", "JPGs",blGrey[0]); 
 d.v4.btnJPGs.onclick = function(){
 	var s = bl$("id_div_4_jpg").innerHTML;
@@ -577,6 +602,7 @@ d.v4.btnJPGs.onclick = function(){
 		v.innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
 	}
 }
+
 d.v4.b01 = blo0.blBtn(d.v4,d.v4.id + "b01", "PNGs",blGrey[0]); 
 d.v4.b01.onclick = function(){
 	var s = bl$("id_div_4_png").innerHTML;
@@ -616,5 +642,7 @@ _addBtn(d.v2,-0.1,"-100ms");
 _addBtn(d.v2,-0.2,"-200ms");
 _addBtn(d.v2,-1.0,"-1000ms");
 _addBtn(d.v2,-2.0,"-2000ms");
+
+
 
 
