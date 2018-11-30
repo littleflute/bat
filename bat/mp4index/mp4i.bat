@@ -8,7 +8,7 @@ echo ^<body^> >>index.html
 
 echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>		>>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 111 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 112 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html 
 
@@ -35,6 +35,8 @@ for /F "delims="  %%a in ('dir /b *.mp4') do (
 @echo off  
 
 
+
+
 @echo on
 setlocal ENABLEDELAYEDEXPANSION
 call set /a x = 0
@@ -57,6 +59,11 @@ for /F "delims="  %%a in ('dir /b *.mp3') do (
 )
 @echo off  
 
+
+
+
+
+
 echo ^<br^> 	>>index.html
 echo ^<div id="id_div_4_jpg" style="border:1px solid blue;" ^>				>>index.html
 @echo on
@@ -71,6 +78,8 @@ for /F "delims="  %%a in ('dir /b *.jpg') do (
 echo ^</div^> 								>>index.html	
  
 
+
+
 echo ^<br^> 	>>index.html
 echo ^<div id="id_div_4_png" style="border:1px solid blue;" ^>				>>index.html
 @echo on
@@ -82,11 +91,32 @@ for /F "delims="  %%a in ('dir /b *.png') do (
 	echo %%a, >>index.html
 )
 @echo off  
-echo ^</div^> 												>>index.html
+echo ^</div^> 							>>index.html	 
+
+
+
+
+echo ^<br^> 	>>index.html
+echo ^<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" ^>		>>index.html
+@echo on
+setlocal ENABLEDELAYEDEXPANSION
+call set /a x = 0
+for /F "delims="  %%a in ('dir /b *lrc.js') do (
+	rem echo %%a >>index.html 
+	call set /a x = !x! + 1
+	echo %%a, >>index.html
+)
+@echo off  
+echo ^</div^> 							>>index.html	
+
+
+
+
+
 
 echo ^<br^> >>index.html
 echo ^<video id="myVideo" width="720" height="480" controls^> >>index.html
-echo  ^<source src="0.mp4" type="video/mp4"^>  >>index.html
+echo  ^<source src="v1.mp4" type="video/mp4"^>  >>index.html
 echo Your browser does not support HTML5 video. >>index.html
 echo ^</video^>  >>index.html
 echo ^<script^>  >>index.html
