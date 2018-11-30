@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 324 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 331 * </a> ';
 
 var _load_plx_btn = function(blo,oBoss,plxName,src, color ){
 			var idBtn	= oBoss.id + plxName + "btn";
@@ -579,7 +579,7 @@ d.v4. btnLRCs . onclick = function(){
 		var tb  = blo0.blDiv(d.v, d.v.id + "_tb_" , 'tb' , blGrey [1]);		 
   		var a = d.innerHTML.split(",");
 		for(var i=0; i< a.length - 1 ; i++){
-			var btnV = blo0.blDiv(tb, tb.id + " -btnV " + i, a[i], blColor[i]);
+			var btnV = blo0.blDiv(tb, "id_div_4_lrc" + (i+1) , a[i], blColor[i]); 
 			var btn = blo0.blBtn( btnV , btnV . id + " -btn " , a[i], blGrey [i]);
 			btn .onclick = function ( _this , _txt ){
 				return function(){ 
