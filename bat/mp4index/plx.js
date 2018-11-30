@@ -514,7 +514,7 @@ function _addBtn(d, t, s){
 	}(t);
 } 
 var blo0 = new blClass;
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 244 * </a> '
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 251 * </a> '
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js</a>';
 var d = blo0.blMDiv(document.body,"id_mdiv_plx", s, 550,50,400,300,blGrey[1]);
 d.v0 = blo0.blDiv(d,d.id + "v0", "v0",blColor[0]); 
@@ -564,8 +564,12 @@ d.v3.b0.onclick = function(){
 		}
 	}(d.v3,t);
 }
-d.v4.b0 = blo0.blBtn(d.v4,d.v4.id + "b0", "JPGs",blGrey[0]); 
-d.v4.b0.onclick = function(){
+d.v4.btnClearV5 = blo0.blBtn(d.v4,d.v4.id + "btnClearV5", "ClearV5",blGrey[1]); 
+d.v4. btnClearV5 .onclick = function(){
+	d.v5.innerHTML = "";
+}
+d.v4.btnJPGs = blo0.blBtn(d.v4,d.v4.id + "btnJPGs", "JPGs",blGrey[0]); 
+d.v4.btnJPGs.onclick = function(){
 	var s = bl$("id_div_4_jpg").innerHTML;
 	var a = s.split(",");
 	for(i in a){
@@ -612,7 +616,5 @@ _addBtn(d.v2,-0.1,"-100ms");
 _addBtn(d.v2,-0.2,"-200ms");
 _addBtn(d.v2,-1.0,"-1000ms");
 _addBtn(d.v2,-2.0,"-2000ms");
-
-
 
 
