@@ -1,4 +1,4 @@
-### [v0.0.42](https://github.com/littleflute/bat/edit/master/README.md)  [me](https://littleflute.github.io/bat/)
+### [v0.0.43](https://github.com/littleflute/bat/edit/master/README.md)  [me](https://littleflute.github.io/bat/)
 <div id = "id_div_4_plx">+plx</div> 
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
