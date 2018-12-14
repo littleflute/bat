@@ -1,5 +1,5 @@
-### [v0.0.43](https://github.com/littleflute/bat/edit/master/README.md)  [me](https://littleflute.github.io/bat/)
-<div id = "id_div_4_plx">+plx</div> 
+### [v0.0.44](https://github.com/littleflute/bat/edit/master/README.md)  [me](https://littleflute.github.io/bat/)
+<div id = "id_div_4_plx">+plx</div> <button id = "id_btn_4_blApp">+blApp</button>
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://littleflute.github.io/JavaScript/blclass.js" ></script>
