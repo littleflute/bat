@@ -1,4 +1,4 @@
-var _g_ver_blAppPlx = "v0.1.32";
+var _g_ver_blAppPlx = "v0.1.33";
 
 function _plxJobClass()
 { 
@@ -22,6 +22,7 @@ function _plxJobClass()
 		
 		b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 	}
+	this.bll1="";
 	this.blrAboutPlx= function(b,d){		
 		var s = "blrAboutPlx<br>"; 
 		s += "<a target='_blank' href='https://github.com/littleflute/bat/edit/master/blAppPlx.js'"
