@@ -1,4 +1,4 @@
-var _g_ver_blAppPlx = "v0.1.25";
+var _g_ver_blAppPlx = "v0.1.31";
 
 function _plxJobClass()
 { 
@@ -44,7 +44,7 @@ function CBlAppPlxClass()
 { 
 	var _plxUI = null;
 	var divPlx = bl$("id_div_4_plx");
-	if(app!=null){
+	if(divPlx!=null){
 		_plxUI = blo0.blDiv(divPlx, divPlx.id + "_plx" , "blAppPlx: " + _g_ver_blAppPlx, blColor[3]);  
 		_plxUI.v = blo0.blDiv(_plxUI, _plxUI.id + "_v" , "v " , blColor[4]);  
 		blo0.blShowObj2Div(_plxUI.v,new _plxJobClass);
