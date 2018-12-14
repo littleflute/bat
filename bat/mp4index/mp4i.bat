@@ -8,7 +8,7 @@ echo ^<body^> >>index.html
 
 echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>		>>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 112 * ^</a^> ^</div^>			 >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 113 * ^</a^> ^</div^>			 >>index.html
 echo ^<div id="DivCurTime"^>^</div^> >>index.html
 echo ^<br^> >>index.html 
 
@@ -152,4 +152,9 @@ echo	}					>>index.html
 
 echo _loadScript ("id_script_plx","plx.js");				>>index.html
 echo ^</script^> >>index.html
+
+echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>				>>index.html
+echo ^<script src="https://littleflute.github.io/JavaScript/blclass.js"^>^</script^>		>>index.html
+echo ^<script src="https://littleflute.github.io/JavaScript/blApp.js"^>^</script^>		>>index.html
+
 echo ^</body^> >>index.html

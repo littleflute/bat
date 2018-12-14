@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 331 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 333 * </a> ';
 
 var _load_plx_btn = function(blo,oBoss,plxName,src, color ){
 			var idBtn	= oBoss.id + plxName + "btn";
@@ -566,6 +566,8 @@ d.v3.b0.onclick = function(){
 		}
 	}(d.v3,t);
 }
+d.v4.btnBlApp = blo0.blBtn(d.v4, "id_btn_4_blApp", "+blApp", blGrey[0]);
+
 d.v4.btnClearV5 = blo0.blBtn(d.v4,d.v4.id + "btnClearV5", "ClearV5",blGrey[1]); 
 d.v4. btnClearV5 .onclick = function(){
 	d.v5.innerHTML = "";
