@@ -1,4 +1,4 @@
-### [v0.0.32](https://github.com/littleflute/bat/edit/master/README.md) 
+### [v0.0.33](https://github.com/littleflute/bat/edit/master/README.md) 
 <div id = "id_div_CXdMainFrame">+plx</div> 
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
