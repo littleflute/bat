@@ -1,4 +1,4 @@
-### [v0.0.25](https://github.com/littleflute/bat/edit/master/README.md) 
+### [v0.0.31](https://github.com/littleflute/bat/edit/master/README.md) 
  
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
