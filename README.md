@@ -1,5 +1,5 @@
-### [v0.0.33](https://github.com/littleflute/bat/edit/master/README.md) 
-<div id = "id_div_CXdMainFrame">+plx</div> 
+### [v0.0.34](https://github.com/littleflute/bat/edit/master/README.md) 
+<div id = "id_div_CXdMainFrame1">+plx</div> 
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://littleflute.github.io/JavaScript/blclass.js" ></script>
