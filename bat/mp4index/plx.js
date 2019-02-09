@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 333 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 334 * </a> ';
 
 var _load_plx_btn = function(blo,oBoss,plxName,src, color ){
 			var idBtn	= oBoss.id + plxName + "btn";
@@ -621,6 +621,12 @@ d.v4.b1.onclick = function(){
 		eval(o.body);
          }
 	w3.getHttpObject("https://api.github.com/repos/littleflute/bluespiano/issues/1", _f);	
+}
+d.v4.b2 = blo0.blBtn(d.v4, "id_btn_Load_i_js" , "Load_i.js",blGrey[1]); 
+d.v4.b2.onclick = function(){
+	var d = bl$( "id_div_4_i.js" );
+	if(d) { _on_off_div(this,d);}
+	else{	var d = blo0.blMDiv(document.body, "id_div_4_i.js" , "load_i.js" ,150,50,400,300,blGrey[1]);}
 }
 var _f = "a.mp3";
 blo0.blAudio (d.v0, "id_mp3Player" , _f);
