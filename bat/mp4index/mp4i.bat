@@ -10,8 +10,12 @@ echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>				>>index.
 echo ^<script src="https://littleflute.github.io/JavaScript/blclass.js"^>^</script^>		>>index.html
 echo ^<script src="https://littleflute.github.io/JavaScript/blApp.js"^>^</script^>		>>index.html
 
-echo ^<div id="id_div_mp4i_bat_info" ^> ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.2. 114 * ^</a^> ^</div^>			 >>index.html
-echo ^<div id="DivCurTime"^>^</div^> >>index.html
+echo ^<div id="id_div_mp4i_bat_info" ^>								>>index.html
+echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.3. 11 * ^</a^>	>>index.html
+echo ^<a href=".."^>[..]^</a^> ^<button id="id_btn_4_blApp"^>+++++++++++blApp+++++++++^</button^>	>>index.html
+
+echo ^</div^>						 >>index.html
+echo ^<div id="DivCurTime"^>^</div^> 			>>index.html
 echo ^<br^> >>index.html 
 
 @echo on
@@ -112,16 +116,16 @@ for /F "delims="  %%a in ('dir /b *lrc.js') do (
 echo ^</div^> 							>>index.html	
 
 
-
-
-
-
-echo ^<br^> >>index.html
-echo ^<video id="myVideo" width="720" height="480" controls^> >>index.html
-echo  ^<source src="v1.mp4" type="video/mp4"^>  >>index.html
-echo Your browser does not support HTML5 video. >>index.html
-echo ^</video^>  >>index.html
+ 
 echo ^<script^>  >>index.html
+
+echo var str4V = '^<video id="myVideo" width="720" height="480" controls^> ';				>>index.html
+echo str4V += '^<source src="v1.mp4" type="video/mp4"^>Your browser does not support HTML5 video.'; 	>>index.html
+echo str4V += '^</video^>';  										>>index.html
+echo var md4v = blo0.blMDiv(document.body,"id_mdiv_4_myVideo" , str4V , 300,100,500,400,blColor[1]); 	>>index.html
+            
+
+
 echo var vid = document.getElementById("myVideo"); >>index.html
 
 echo function play(i) {>>index.html
@@ -146,11 +150,11 @@ echo   getCurTime();  >>index.html
 echo }   >>index.html
 
 echo var _loadScript = function (id,src){					>>index.html
-echo	var	r = document.createElement("script");		>>index.html
-echo	r.id = id;				>>index.html
-echo	r.src = src; 				>>index.html
-echo	document.body.appendChild(r);		>>index.html
-echo	}					>>index.html
+echo	var	r = document.createElement("script");				>>index.html
+echo	r.id = id;								>>index.html
+echo	r.src = src; 								>>index.html
+echo	document.body.appendChild(r);						>>index.html
+echo	}									>>index.html
 
 echo _loadScript ("id_script_plx","plx.js");				>>index.html
 echo ^</script^> >>index.html
