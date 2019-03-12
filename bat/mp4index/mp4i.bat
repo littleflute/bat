@@ -11,7 +11,7 @@ echo ^<script src="https://littleflute.github.io/JavaScript/blclass.js"^>^</scri
 echo ^<script src="https://littleflute.github.io/JavaScript/blApp.js"^>^</script^>		>>index.html
 
 echo ^<div id="id_div_mp4i_bat_info" ^>								>>index.html
-echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.3. 13 * ^</a^>	>>index.html
+echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.3. 14 * ^</a^>	>>index.html
 echo ^<a href=".."^>[..]^</a^> ^<button id="id_btn_4_blApp"^>+++++++++++blApp+++++++++^</button^>	>>index.html
 
 echo ^</div^>						 >>index.html
@@ -43,8 +43,6 @@ for /F "delims="  %%a in ('dir /b *.mp4') do (
 @echo off  
 
 
-echo  ^</div^> 			>>index.html
-
 
 @echo on
 setlocal ENABLEDELAYEDEXPANSION
@@ -69,8 +67,7 @@ for /F "delims="  %%a in ('dir /b *.mp3') do (
 @echo off  
 
 
-
-
+echo  ^</div^> 			>>index.html
 
 
 echo ^<br^> 	>>index.html
