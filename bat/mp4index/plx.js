@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 342 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 434 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -598,12 +598,29 @@ d.v4. btnLRCs . onclick = function(){
 
 d.v4.btnJPGs = blo0.blBtn(d.v4,d.v4.id + "btnJPGs", "JPGs",blGrey[0]); 
 d.v4.btnJPGs.onclick = function(){
-	var s = bl$("id_div_4_jpg").innerHTML;
-	var a = s.split(",");
-	for(i in a){
-		var v = blo0.blDiv(d.v5, d.v5.id + "_jpg_"+ i, i + ":" + a[i], blColor[i]);
-		v.innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
+	 
+	if(!this.v){
+		this.v = blo0.blMDiv(this.parentElement, this.id + "v", "v4JPGs", 50,50,100,100,blGrey[0]);
+		var s = bl$("id_div_4_jpg").innerHTML;
+		var a = s.split(",");
+		for(i in a){
+			var v = blo0.blDiv(this.v, this.v.id + "_jpg_"+ i, i + ":" + a[i], blColor[i]);
+			v.btn1 = blo0.blBtn(v, v.id + "showBtn" +i, "show",blGrey[0]); 
+			v.btn1. div4jpg = blo0.blDiv(v, v.id + " div4jpg " , "jpg:", blColor[i]);
+			v.btn1. div4jpg .innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
+
+			v.btn1 .onclick = function( _this ){ 
+				return function(){  
+					var d = _this ; var d = d.div4jpg;
+					var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];						 
+				};
+			}( v.btn1);
+			v.btn1.click();
+		}
 	}
+
+	var d = this.v;
+	var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	
 }
 
 d.v4.b01 = blo0.blBtn(d.v4,d.v4.id + "b01", "PNGs",blGrey[0]); 
