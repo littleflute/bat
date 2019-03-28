@@ -11,7 +11,7 @@ echo ^<script src="https://littleflute.github.io/JavaScript/blclass.js"^>^</scri
 echo ^<script src="https://littleflute.github.io/JavaScript/blApp.js"^>^</script^>		>>index.html
 
 echo ^<div id="id_div_mp4i_bat_info" ^>								>>index.html
-echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.3. 14 * ^</a^>	>>index.html
+echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat"^>v1.3. 15 * ^</a^>	>>index.html
 echo ^<a href=".."^>[..]^</a^> ^<button id="id_btn_4_blApp"^>+++++++++++blApp+++++++++^</button^>	>>index.html
 
 echo ^</div^>						 >>index.html
@@ -48,6 +48,28 @@ for /F "delims="  %%a in ('dir /b *.mp4') do (
 setlocal ENABLEDELAYEDEXPANSION
 call set /a x = 0
 for /F "delims="  %%a in ('dir /b *.mp3') do (
+	rem echo %%a >>index.html
+	if !x! == 10 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 20 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 30 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 40 (
+		echo ^<br^> >>index.html
+	)
+	call set /a x = !x! + 1
+	echo ^<button onclick="play('%%a')"^>!x!:%%a^</button^> >>index.html
+)
+@echo off  
+
+@echo on
+setlocal ENABLEDELAYEDEXPANSION
+call set /a x = 0
+for /F "delims="  %%a in ('dir /b *.wav') do (
 	rem echo %%a >>index.html
 	if !x! == 10 (
 		echo ^<br^> >>index.html
