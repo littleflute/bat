@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 442 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 444 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -611,11 +611,23 @@ d.v4.btnJPGs.onclick = function(){
 			btn.onclick = function(_i, _src, _btn ){
 				return function(){
 					if(!this.v){
-						this.v = blo0.blMDiv(this.parentElement, "id_div_4_" + _i, _i, 0, 1,100,100,blGrey[1]);
-						this.v.btn = blo0.blBtn( this.v , this.v.id + "showBtn", "no." + _i, blGrey[0]);
+						this.v = blo0.blMDiv(this.parentElement, "id_div_4_" + _i, _i, 0, 1,500,100,blGrey[1]);
+						this.v.btn1 = blo0.blBtn( this.v , this.v.id + "btn1", "no." + _i, blGrey[0]);
+						this.v.btn2 = blo0.blBtn( this.v , this.v.id + "btn2", "500px" , blGrey[0]);
+						this.v.btn3 = blo0.blBtn( this.v , this.v.id + "btn3", "800px" , blGrey[0]);
+						this.v.btn4 = blo0.blBtn( this.v , this.v.id + "btn4", "1200px" , blGrey[0]);
+						this.v.btnX = blo0.blBtn( this.v , this.v.id + "btnX", "X=" , blGrey[0]);
 						this.v.v1 = blo0.blDiv(this.v,  this.v.id + "v1", _i , blGrey[1]);
-						this.v.v1.innerHTML =   "<img src='" +_src  + "'></img>";
-						this.v.btn.onclick = function(){ _btn.click();}
+						this.v.v1.innerHTML =   "<img id = 'jpg" + _i + "' src='" +_src  + "'></img>";
+						this.v.btn1.onclick = function(){ _btn.click();}
+						this.v.btn2.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "500px";
+						}
+						this.v.btn3.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "800px";
+						}
+						this.v.btn4.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "1200px";
+						}
+						this.v.btnX.onclick = function(){ var jpg = bl$('jpg' + _i); 	alert(jpg.style.width) ;
+						}
 					}
 					var d = this.v;
 					var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	
