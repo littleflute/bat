@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 441 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 442 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -599,22 +599,28 @@ d.v4. btnLRCs . onclick = function(){
 d.v4.btnJPGs = blo0.blBtn(d.v4,d.v4.id + "btnJPGs", "JPGs",blGrey[0]); 
 d.v4.btnJPGs.onclick = function(){	 
 	if(!this.v){
-		this.v = blo0.blMDiv(this.parentElement, this.id + "v", "v4JPGs", 210,50,500,100,blGrey[0]);
+		this.v = blo0.blMDiv(this.parentElement, this.id + "v", "v4JPGs", 210,50,500,100, blGrey[0]);
+		this.v. tbDiv = blo0.blDiv(this.v, this.v.id + "_tbDiv_" ,  "tb:", blGrey[0]);
+		this.v. ViewDiv = blo0.blDiv(this.v, this.v.id + " ViewDiv " ,  "view:", blGrey[2]);
+		var tb = this.v. tbDiv;
+		 
 		var s = bl$("id_div_4_jpg").innerHTML;
 		var a = s.split(",");
-		for(i in a){
-			var v = blo0.blDiv(this.v, this.v.id + "_jpg_"+ i, i + ":" + a[i], blColor[i]);
-			v.btn1 = blo0.blBtn(v, v.id + "showBtn" +i, "show",blGrey[0]); 
-			v.btn1. div4jpg = blo0.blDiv(v, v.id + " div4jpg " , "jpg:", blColor[i]);
-			v.btn1. div4jpg .innerHTML = a[i] + "<img src='" + a[i] + "'></img>";
-
-			v.btn1 .onclick = function( _this ){ 
-				return function(){  
-					var d = _this ; var d = d.div4jpg;
-					var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];						 
-				};
-			}( v.btn1);
-			v.btn1.click();
+		for(i in a){ 
+			var btn = blo0.blBtn(tb, tb.id + "showBtn" +i, "no." + i, blGrey[0]);
+			btn.onclick = function(_i, _src, _btn ){
+				return function(){
+					if(!this.v){
+						this.v = blo0.blMDiv(this.parentElement, "id_div_4_" + _i, _i, 0, 1,100,100,blGrey[1]);
+						this.v.btn = blo0.blBtn( this.v , this.v.id + "showBtn", "no." + _i, blGrey[0]);
+						this.v.v1 = blo0.blDiv(this.v,  this.v.id + "v1", _i , blGrey[1]);
+						this.v.v1.innerHTML =   "<img src='" +_src  + "'></img>";
+						this.v.btn.onclick = function(){ _btn.click();}
+					}
+					var d = this.v;
+					var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	
+				}
+			}(i,a[i],btn)  		
 		}
 	}
 
@@ -684,5 +690,6 @@ _addBtn(d.v2,-0.1,"-100ms");
 _addBtn(d.v2,-0.2,"-200ms");
 _addBtn(d.v2,-1.0,"-1000ms");
 _addBtn(d.v2,-2.0,"-2000ms");
+
 
 
