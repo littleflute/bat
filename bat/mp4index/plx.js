@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 444 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 453 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -528,7 +528,17 @@ d.v4 = blo0.blDiv(d,d.id + "v4", "v4",blColor[4]);
 d.v5 = blo0.blDiv(d,d.id + "v5", "v5",blColor[5]); 
 d.v3.b0 = blo0.blBtn(d.v3,d.v3.id + "b0", "b0",blGrey[0]); 
 d.v3.b1 = blo0.blBtn(d.v3,d.v3.id + "b1", "set",blGrey[0]); 
+d.v3. btnATs = blo0.blBtn(d.v3,d.v3.id + "btnATs", "ATs",blGrey[0]); 
 d.v3.now = null;
+d.v3. btnATs .onclick = function(){
+	var s = "var tt = [";
+	var bs = d.v3.bs;
+	for(i in bs){
+		s += bs[i].t + ",";
+	}
+	s += "];";
+	alert(s);
+}
 d.v3. selBtn = function(_btn){
 	var bs = d.v3.bs;
 	for(i in bs){
@@ -596,6 +606,48 @@ d.v4. btnLRCs . onclick = function(){
 }
 
 
+d.v4. btnGIFs = blo0.blBtn(d.v4,d.v4.id + "btnGIFs", "GIFs",blGrey[0]); 
+d.v4. btnGIFs .onclick = function(){	 
+	if(!this.v){
+		this.v = blo0.blMDiv(this.parentElement, this.id + "v", "v4GIFs", 210,50,500,100, blGrey[0]);
+		this.v. tbDiv = blo0.blDiv(this.v, this.v.id + "_tbDiv_" ,  "tb:", blGrey[0]);
+		this.v. ViewDiv = blo0.blDiv(this.v, this.v.id + " ViewDiv " ,  "view:", blGrey[2]);
+		var tb = this.v. tbDiv;
+
+		var s = bl$("id_div_4_gif").innerHTML;
+		var a = s.split(",");
+		for(i in a){ 
+			var btn = blo0.blBtn(tb, tb.id + "showBtn" +i, "no." + i, blGrey[0]);
+			btn.onclick = function(_i, _src, _btn ){
+				return function(){
+					if(!this.v){
+						this.v = blo0.blMDiv(this.parentElement, "id_div_4_" + _i, _i, 0, 1,500,100,blGrey[1]);
+						this.v.btn1 = blo0.blBtn( this.v , this.v.id + "btn1", "no." + _i, blGrey[0]);
+						this.v.btn2 = blo0.blBtn( this.v , this.v.id + "btn2", "500px" , blGrey[0]);
+						this.v.btn3 = blo0.blBtn( this.v , this.v.id + "btn3", "800px" , blGrey[0]);
+						this.v.btn4 = blo0.blBtn( this.v , this.v.id + "btn4", "1200px" , blGrey[0]);
+						this.v.btnX = blo0.blBtn( this.v , this.v.id + "btnX", "X=" , blGrey[0]);
+						this.v.v1 = blo0.blDiv(this.v,  this.v.id + "v1", _i , blGrey[1]);
+						this.v.v1.innerHTML =   "<img id = 'jpg" + _i + "' src='" +_src  + "'></img>";
+						this.v.btn1.onclick = function(){ _btn.click();}
+						this.v.btn2.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "500px";
+						}
+						this.v.btn3.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "800px";
+						}
+						this.v.btn4.onclick = function(){ var jpg = bl$('jpg' + _i); 	jpg.style.width = "1200px";
+						}
+						this.v.btnX.onclick = function(){ var jpg = bl$('jpg' + _i); 	alert(jpg.style.width) ;
+						}
+					}
+					var d = this.v;
+					var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	
+				}
+			}(i,a[i],btn)  		
+		}
+	}
+	var d = this.v;
+	var b = this;_on_off_div(b,d); b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];	
+}
 d.v4.btnJPGs = blo0.blBtn(d.v4,d.v4.id + "btnJPGs", "JPGs",blGrey[0]); 
 d.v4.btnJPGs.onclick = function(){	 
 	if(!this.v){
@@ -702,6 +754,5 @@ _addBtn(d.v2,-0.1,"-100ms");
 _addBtn(d.v2,-0.2,"-200ms");
 _addBtn(d.v2,-1.0,"-1000ms");
 _addBtn(d.v2,-2.0,"-2000ms");
-
 
 
