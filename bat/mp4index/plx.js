@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.0. 454 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.1. 11 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -732,6 +732,8 @@ d.v4.b2.onclick = function(){
 	if(!this.vLoad_i_js) {this.vLoad_i_js = blo0.blMDiv(document.body, "id_div_4_i.js" , "load_i.js" ,150,50,400,300,blGrey[1]); }
 	_on_off_div(this,this.vLoad_i_js);
 }
+_load_plx_btn (blo0, d.v4, "plxName-i.js", "i.js", "brown");
+
 var _f = "a.mp3";
 blo0.blAudio (d.v0, "id_mp3Player" , _f);
 d.v0.d1 = blo0.blDiv(d.v0,d.v0.id + "d1", "d1",blColor[4]); 
