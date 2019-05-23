@@ -1,4 +1,4 @@
-var _g_ver_blAppPlx = "v0.1. 124 ";
+var _g_ver_blAppPlx = "v0.1. 131";
 
 function _plxJobClass()
 { 
@@ -11,14 +11,14 @@ function _plxJobClass()
 			var INO = 1;
  			function _loadIssue (o) { 
     				var btn = blo0.blBtn(d.tb , "d.tb.b" + INO, "i" + INO, blGrey[2]);	
-				btn.onclick = function (_txt,_this, _v){
+				btn.onclick = function (_o, _this, _v){
 					return function(){
-						_v.innerHTML = _this.id + ": <br>" ;
-						_v.ta = blo0.blTextarea(_v, _v.id + "ta", _txt, blGrey[0]);
+						_v.innerHTML = _this.id + ":  " + o.title + "<br>" ;
+						_v.ta = blo0.blTextarea(_v, _v.id + "ta", o.body , blGrey[0]);
 						_v.ta .style. width 	= "98%";
 						_v.ta .style. height	= "50px";
 					}
-				}(o.body, btn, d.v);
+				}(o, btn, d.v);
 
 				INO ++;
   				var url = "https://api.github.com/repos/littleflute/bat/issues/" + INO ;
