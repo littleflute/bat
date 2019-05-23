@@ -1,5 +1,4 @@
-### [v0.0.113](https://github.com/littleflute/bat/edit/master/README.md)  [me](https://littleflute.github.io/bat/)
-## [t.html](t.html)
+### [v0.0.114](https://github.com/littleflute/bat/edit/master/README.md) | [me](https://littleflute.github.io/bat/) | [t.html](t.html)
 <div id = "id_div_4_plx">
   <button id = "id_btn_4_blApp">+blApp</button> 
 </div> 
