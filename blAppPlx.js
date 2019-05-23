@@ -1,7 +1,12 @@
-var _g_ver_blAppPlx = "v0.1.35";
+var _g_ver_blAppPlx = "v0.1.41";
 
 function _plxJobClass()
 { 
+	this.blrIssues = function(b,d){
+		if(!d.v){
+			d.v = blo0.blDiv(d,d.id+"v","v_blrIssues",blGrey[1]);
+		}
+	}
 	this.blrIssue3C = function(b,d){
 		if(!d.v){
 			d.v = blo0.blDiv(d,d.id+"v","v",blGrey[5]);
