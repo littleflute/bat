@@ -1,12 +1,36 @@
-var _g_ver_blAppPlx = "v0.1.42";
+var _g_ver_blAppPlx = "v0.1. 124 ";
 
 function _plxJobClass()
 { 
-	this.blrIssues = function(b,d){
+	this. blrIssues = function(b,d){
 		if(!d.v){
-			d.v = blo0.blDiv(d,d.id+"v","v_blrIssues",blGrey[1]);
+			d.tb = blo0.blDiv(d,d.id+"v","tb",blGrey[1]);
+			d.tb.style = "color: brown; background: grey";
+			d.v = blo0.blDiv(d,d.id+"v1","v1",blGrey[1]);
+			d.v.style = "color: brown; background: grey";
+			var INO = 1;
+ 			function _loadIssue (o) { 
+    				var btn = blo0.blBtn(d.tb , "d.tb.b" + INO, "i" + INO, blGrey[2]);	
+				btn.onclick = function (_txt,_this, _v){
+					return function(){
+						_v.innerHTML = _this.id + ": <br>" ;
+						_v.ta = blo0.blTextarea(_v, _v.id + "ta", _txt, blGrey[0]);
+						_v.ta .style. width 	= "98%";
+						_v.ta .style. height	= "50px";
+					}
+				}(o.body, btn, d.v);
+
+				INO ++;
+  				var url = "https://api.github.com/repos/littleflute/bat/issues/" + INO ;
+  				w3.getHttpObject(url, _loadIssue);
+  			}
+  			var url = "https://api.github.com/repos/littleflute/bat/issues/" + INO ;
+  			w3.getHttpObject(url, _loadIssue);
 		}
+		_on_off_div(b,d);		
+		b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 	}
+	this.bll0="";
 	this.blrIssue3C = function(b,d){
 		if(!d.v){
 			d.v = blo0.blDiv(d,d.id+"v","v",blGrey[5]);
@@ -63,5 +87,6 @@ function CBlAppPlxClass()
 }
  
 var _blAppPlx = new CBlAppPlxClass;    
+	bl$( "blrIssues" ).click();	bl$( "blrIssues" ).click();
 	bl$("blrIssue3C").click();	bl$("blrIssue3C").click();
 	bl$("blrAboutPlx").click();	bl$("blrAboutPlx").click();
