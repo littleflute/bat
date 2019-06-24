@@ -1,5 +1,5 @@
 // file: blclass.js    by littleflute 
-var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.1. 11 * </a> ';
+var s = '<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/plx.js">plx.js_v0.1. 12 * </a> ';
 s += ' - <a target="_blank" href="https://littleflute.github.io/bat/bat/mp4index/plx.js">plx.js(online)</a>';
 s += ' - <a target="_blank" href="plx.js">plx.js</a>';
 
@@ -558,7 +558,7 @@ d.v3. go2t = function( _v, _t ){
 			ii.click();			
 		}
 	}	  
-	_v.innerHTML = _t + " : " + dt1 ;
+	_v.innerHTML = _t + " : ";
 }
 d.v3. b1.onclick = function(){
 	d.v3.now.t = vid.currentTime;
@@ -756,6 +756,5 @@ _addBtn(d.v2,-0.1,"-100ms");
 _addBtn(d.v2,-0.2,"-200ms");
 _addBtn(d.v2,-1.0,"-1000ms");
 _addBtn(d.v2,-2.0,"-2000ms");
-
 
 
