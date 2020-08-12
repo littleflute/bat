@@ -1,33 +1,54 @@
-const tag = "<a target='_blank' href='https://github.com/littleflute/bat/edit/master/bat/mi/mi.bat'>[blMiApp.js_v0. 14 *]</a>"; 
-blo0.addClass = function (o,className) {  o.classList.add(className); } 
+echo mi.bat_ v0. 23
+rem Usages: mi mp4
 
- 
+del index.html
+@echo off
+echo ^<!DOCYPE html^> 												>>index.html
+echo ^<html^> 													>>index.html
+echo ^<title^>blMi index.html^</title^>										>>index.html
+echo ^<meta name="viewport" content="width=device-width, initial-scale=1"^>					>>index.html
+echo ^<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"^>					>>index.html
+echo ^<body^> 													>>index.html
 
-var md = blo0.blMD("id_md_4_my_app",tag,50,50,500,100,blGrey[0]);
-var s = "<h2>Closable Tabs</h2>";
-s+='<p>To close a tab, add onclick="this.parentElement.style.display=\'none\'" to an element inside the tab container.</p>';
-s+='<p><strong>Tip:</strong> The w3-button class can be used to style the close button (x):</p>';
-var v1 = blo0.blDiv(md,md.id+"v1",s,blGrey[1]);
-blo0.addClass(v1,"w3-container");
-  
-var tb = blo0.blDiv(md,md.id+"v2","::",blGrey[1]);
-var v3 = blo0.blDiv(md,md.id+"v3","v3",blGrey[2]);
+echo ^<script src="https://www.w3schools.com/lib/w3.js"^>^</script^>						>>index.html
+echo ^<script src="https://littleflute.github.io/JavaScript/blclass.js"^>^</script^>				>>index.html
+echo ^<script src="blMiApp.js"^>^</script^>									>>index.html
 
-blo0.addClass( tb ,"w3-bar");
-blo0.addClass( tb ,"w3-black");
-tb.addBtn = function(name,clr,clickFun){
-	var b = blo0.blBtn(tb,tb.id+"" + name,name,blGrey[2]);
-	blo0.addClass ( b ,"w3-bar-item");
-	blo0.addClass ( b , "w3-button");
-	blo0.addClass ( b , clr);	
-	b . onclick = function(){
-		if(clickFun) clickFun();
-	}
-}
-tb.addBtn("MP3","w3-black",function(){
-	v3.innerHTML = "mp3";
-});
-tb.addBtn("MP4","w3-black",function(){
-	var d = bl$("Div_4_MP4List");
-	v3.innerHTML = d.innerHTML;
-});
+echo ^<div id="id_div_4_mi.bat" ^>										>>index.html
+echo ^<a target="_blank" href="https://github.com/littleflute/bat"^>bat.git v0. 23 ^</a^> -			>>index.html
+echo ^<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mi/mi.bat"^> mi.bat *^</a^>-	>>index.html 
+echo ^</div^>						 							>>index.html
+echo ^<div class="w3-bar w3-black"^>abc^</div^>									>>index.html
+
+echo ^<br^> >>index.html 
+
+
+
+echo ^<div id = "Div_4_MP4List" ^>							 				>>index.html
+@echo on
+setlocal ENABLEDELAYEDEXPANSION
+call set /a x = 0
+for /F "delims="  %%a in ('dir /b *.mp4') do (
+	rem echo %%a >>index.html
+	if !x! == 10 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 20 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 30 (
+		echo ^<br^> >>index.html
+	)
+	if !x! == 40 (
+		echo ^<br^> >>index.html
+	)
+	call set /a x = !x! + 1
+	echo ^<button onclick="play('%%a')"^>!x!:%%a^</button^> >>index.html
+)
+@echo off  
+
+
+
+
+echo ^</html^> 													>>index.html
+echo ^</body^> 													>>index.html
