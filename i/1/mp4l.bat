@@ -5,6 +5,6 @@ del mp4List.txt
 setlocal ENABLEDELAYEDEXPANSION
 
 for /F "delims="  %%a in ('dir /b *.mp4') do ( 
-	echo %%a >> mp4List.txt
+	echo file '%%a' >> mp4List.txt
 )
 @echo off  
