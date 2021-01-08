@@ -7,3 +7,4 @@ curl https://raw.githubusercontent.com/littleflute/bat/master/bat/ffmpeg/mp4c.ba
 
 curl https://raw.githubusercontent.com/littleflute/blog/master/i/i1250/1138.gif		                            	-o 		1138.gif
 curl https://user-images.githubusercontent.com/17950965/103499626-9f52cb00-4dfd-11eb-9088-56e3fef3dd03.png	    	-o 		dt01.png
+curl https://user-images.githubusercontent.com/17950965/104061673-e4844d80-51ad-11eb-980e-d24afa9fa18a.png	    	-o 		ssnn1.png
