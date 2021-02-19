@@ -1,4 +1,4 @@
-## [v0.0.123](https://github.com/littleflute/bat/edit/master/README.md) | [me](https://littleflute.github.io/bat/) | [t.html](t.html) [bat](bat)
+## [v0.0.124](https://github.com/littleflute/bat/edit/master/README.md) | [me](https://littleflute.github.io/bat/) | [t.html](t.html) [bat](bat)
 ### [test](test)
 
 <div id = "id_div_4_plx">
