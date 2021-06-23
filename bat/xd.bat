@@ -1,2 +1,2 @@
 c:
-cd C:\Users\wangyi7\xd\
+cd C:\Users\13699\xd\
