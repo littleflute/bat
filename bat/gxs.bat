@@ -1,0 +1,1 @@
+git config --global https.proxy "socks5://localhost:4567"
