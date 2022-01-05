@@ -1,0 +1,1 @@
+ssh  -D 4567     -L 9090:localhost:9090     xj

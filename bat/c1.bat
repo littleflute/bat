@@ -1,0 +1,1 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" /proxy-server=socks5://127.0.0.1:4567
