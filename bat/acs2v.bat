@@ -1,0 +1,1 @@
+ffmpeg  -i %1 -f lavfi -i color=%2@0.0:s=1920x1080:rate=30,format=rgba -vf subtitles=%3 -ss 00:00:00 -t %4	 %5
