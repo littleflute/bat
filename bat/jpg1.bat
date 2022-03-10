@@ -1,0 +1,1 @@
+ffmpeg -ss %1 -i input -frames:v 1 -q:v 2 %2.jpg
