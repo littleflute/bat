@@ -1,1 +1,1 @@
-ssh -D 4567  -L 8081:localhost:3001       aws
+ssh -D 4567  -L 3001:localhost:3001       aws
